@@ -1,0 +1,18 @@
+appName: "hellospring"
+version: "2.0"
+artifactsSource: [TODO> point artifactsSource to a Github release artifact] "https://springopsartifacts.blob.core.windows.net/releases/spring-cloud-microservice-0.0.1-SNAPSHOT.jar"
+blueGreen: true
+instanceCount: 2
+environmentVariables:
+  env1: "envvalue1"
+cpu: 1
+memoryInGb: 1
+jvmOptions: "-Xms512m"
+isPublic: true
+identity: false
+runtime: "Java_11"
+httpsOnly: false
+endToEndTls: true
+persistentDisk:
+  sizeInGb: 5
+  mountPath: "/persistent"
